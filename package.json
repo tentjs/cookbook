@@ -1,0 +1,18 @@
+{
+  "name": "@tentjs/cookbook",
+  "version": "0.0.1",
+  "description": "The ⛺ Tent cookbook",
+  "scripts": {
+    "start": "rm -rf dist && parcel ./src/pages/*.pug --no-cache -p 1337",
+    "build": "rm -rf docs && parcel build ./src/pages/*.pug --no-cache --dist-dir=docs --public-url=./"
+  },
+  "author": "sebkolind <sks1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tentjs/tent": "^0.0.16"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.11.0",
+    "parcel": "^2.11.0"
+  }
+}

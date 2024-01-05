@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Async List #{title}
+  body
+    div.recipe
+      h1 Async List
+      p A list fetched from <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> with a limitation of how many items to show per "page".
+      p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/async-list.ts') [source]
+      hr
+    script(type="module", src="../components/async-list.ts")

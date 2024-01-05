@@ -63,3 +63,8 @@ ul {
     margin-top: 0;
   }
 }
+
+.go-back {
+  margin-bottom: 8px;
+  display: inline-block;
+}

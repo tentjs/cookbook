@@ -5,8 +5,9 @@ html(lang="en")
     title Async List #{title}
   body
     div.recipe
+      a(href="index.pug" class="go-back") back
       h1 Async List
-      p A list fetched from <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> with a limitation of how many items to show per "page".
+      p A list fetched from <a href="https://jsonplaceholder.typicode.com/" target="blank">JSONPlaceholder</a> with a limitation of how many items to show per "page".
       p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/async-list.ts') [source]
       hr
     script(type="module", src="../components/async-list.ts")

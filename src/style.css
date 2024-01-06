@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--color-black);
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans', sans-serif;
   color: var(--color-white);
   font-size: 14px;
   line-height: 1.5;

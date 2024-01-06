@@ -2,11 +2,11 @@ doctype html
 html(lang="en")
   head
     link(rel="stylesheet", href="../style.css")
-    title Attributes #{title}
+    title Pass data to component #{title}
   body
     div.recipe(msg="Hello World!")
       a(href="index.pug" class="go-back") back
-      h1 Attributes
+      h1 Pass data to component
       p.
         Passing data to the component via attributes. Also known as "props".
         But, since they are just attributes, why not call them that.

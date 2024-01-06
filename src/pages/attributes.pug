@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Attributes #{title}
+  body
+    div.recipe(msg="Hello World!")
+      a(href="index.pug" class="go-back") back
+      h1 Attributes
+      p.
+        Passing data to the component via attributes. Also known as "props".
+        But, since they are just attributes, why not call them that.
+      p.
+        This is useful if your web page is server-rendered and you want to pass
+        some data to the component.
+      p.
+        This is recommended compared to fetching the same data via a HTTP request in `mounted`,
+        which would be less effective, and could cause some glitching when rendering.
+      p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/attributes.ts') [source]
+      hr
+    script(type="module", src="../components/attributes.ts")

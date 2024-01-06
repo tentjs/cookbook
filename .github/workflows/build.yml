@@ -13,4 +13,6 @@ jobs:
           node-version: '18.x'
       - run: npm ci
       - run: npm run build
+      - run: git config.name 'sebkolind'
+      - run: git config.email 'sks1993@gmail.com'
       - run: git add . && git commit -m 'deploy'

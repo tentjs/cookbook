@@ -1,0 +1,53 @@
+.group {
+  display: flex;
+  padding-top: 28px;
+  position: relative;
+
+  &::after {
+    content: "INPUT";
+    background-color: #222;
+    border-radius: 0 0 0 4px;
+    padding: 4px 6px;
+    font-size: 10px;
+    position: absolute;
+    bottom: -23px;
+    right: 50%;
+    color: #555;
+  }
+
+  input {
+    width: 50%;
+    padding: 16px 18px;
+    font-size: 1.10em;
+    color: #ccc;
+    background-color: #222;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+    height: 50px;
+  }
+
+  p {
+    width: 50%;
+    padding: 16px 18px;
+    margin: 0;
+    background-color: #000;
+    border-radius: 0 6px 6px 0;
+    position: relative;
+    font-family: monospace;
+    height: 50px;
+
+    &::after {
+      content: "OUTPUT";
+      font-family: var(--font);
+      background-color: #000;
+      border-radius: 0 0 4px;
+      padding: 4px 6px;
+      font-size: 10px;
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      color: #555;
+    }
+  }
+}

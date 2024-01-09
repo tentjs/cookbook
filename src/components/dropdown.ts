@@ -38,7 +38,7 @@ const collection: Item[] = [
         attributes: {
           role: 'link',
           onclick: () => {
-            window.open('https://github.com/tentjs/coobook/tree/main/src/components/dropdown.ts', '_blank')
+            window.open('https://github.com/tentjs/cookbook/tree/main/src/components/dropdown.ts', '_blank')
           }
         }
       }

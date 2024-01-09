@@ -57,26 +57,22 @@ const Dropdown: Component<State> = {
     button('Filters', {onclick: () => state.open = !state.open}),
     ul(state.open ?
       state.collection.map(
-        item => {
-          // Section
-          if (item.items) {
-            const {title, items} = item
-
-            return div([
-              li([
-                span(title),
-                span(''),
-              ]),
-              ...items.map(item => single(item)),
-            ])
-          }
-
-          // Single
-          return single(item)
-        }
+        item => item.items
+          ? section(item.title, item.items)
+          : single(item)
       ) : []
     ),
   ], {className: styles.dropdown})
+}
+
+function section(title: string, items: Item[]) {
+  return div([
+    li([
+      span(title),
+      span(''),
+    ]),
+    ...items.map(item => single(item)),
+  ])
 }
 
 function single(item: Item) {

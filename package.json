@@ -9,7 +9,7 @@
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tentjs/tent": "^0.0.16"
+    "@tentjs/tent": "^0.0.17"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.11.0",

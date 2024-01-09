@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Dropdown #{title}
+    include ../_includes/head.pug
+    style.
+      .recipe {
+        max-width: 350px;
+      }
+  body
+    div.recipe
+      h1 Dropdown
+      p Displays a collection in a menu - triggered by a button. Can be grouped in sections.
+      hr
+    script(type="module", src="../components/dropdown.ts")
+    include ../_includes/footer.pug

@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Tabs #{title}
+    include ../_includes/head.pug
+  body
+    div.recipe
+      h1 Tabs
+      p Group content into multiple tabs.
+      hr
+    script(type="module", src="../components/tabs.ts")
+    include ../_includes/footer.pug

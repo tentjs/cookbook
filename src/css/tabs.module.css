@@ -1,0 +1,31 @@
+.buttons {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+
+  button {
+    padding: 6px 10px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    transition: background-color .2s ease-in-out,
+      color .2s ease-in-out;
+
+    &:not(.active):hover {
+      background-color: var(--color-black-fade);
+    }
+  }
+
+  .active {
+    color: var(--color-black);
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+  }
+}
+
+.content {
+  padding: 12px;
+  border-radius: var(--radius);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-grey-100);
+}

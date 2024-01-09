@@ -16,6 +16,11 @@ type Item = {
   items?: Item[]
 }
 
+/**
+ * In a real world example this probably wouldn't be here,
+ * instead, it would be either passed to the component or fetched from an API.
+ * Or, you could build it in the FE like I've done here :)
+ */
 const collection: Item[] = [
   {title: 'Unread', tag: 4, selected: false},
   {title: 'Flagged', tag: 23, selected: false},

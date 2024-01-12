@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Accordion #{title}
+    include ../_includes/head.pug
+  body
+    div.recipe
+      h1 Accordion
+      p Displays content in vertical expandables. Perfect for fitting more content into a page. Typically used for "Frequently Asked Questions".
+      hr
+    script(type="module", src="../components/accordion.ts")
+    include ../_includes/footer.pug

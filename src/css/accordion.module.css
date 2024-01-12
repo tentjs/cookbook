@@ -1,0 +1,40 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-grey-200);
+
+  &.active {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    + .content {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.content:not(:empty) {
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-grey-200);
+
+  p {
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

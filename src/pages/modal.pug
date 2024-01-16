@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Modal #{title}
+    include ../_includes/head.pug
+    style.
+      .recipe {
+        max-width: 350px;
+      }
+  body
+    div.recipe
+      h1 Modal
+      p A modal with open/close animations made with <a href="">anime.js</a> - opened with a button.
+      p Can be closed by a button, clicking the background overlay and escape.
+      hr
+    script(type="module", src="../components/modal.ts")
+    include ../_includes/footer.pug

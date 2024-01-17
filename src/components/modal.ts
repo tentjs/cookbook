@@ -33,7 +33,7 @@ const Modal: Component<State> = {
           className: styles.overlay,
         }),
       ] : [],
-      {className: styles.modal}
+      {className: `${styles.modal} ${state.open ? 'open' : ''}`}
     )
   ]),
   mounted: async ({state}) => {

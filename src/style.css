@@ -79,6 +79,9 @@ ul {
 .go-back {
   margin-bottom: 8px;
   display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .footer {

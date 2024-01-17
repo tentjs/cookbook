@@ -55,6 +55,8 @@ const Modal: Component<State> = {
 const onOpen = (state: State) => {
   state.open = true
 
+  document.body.classList.add(styles.noScroll)
+
   animation = anime({
     targets: document.querySelector(`.${styles.modal}`),
     opacity: [0, 1],
@@ -68,6 +70,8 @@ const onClose = async (state: State) => {
   animation.play()
 
   await animation.finished
+
+  document.body.classList.remove(styles.noScroll)
 
   state.open = false
 }

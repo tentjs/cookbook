@@ -43,8 +43,8 @@ hr {
 }
 
 a {
-  color: var(--color-primary);
-  text-decoration: none;
+  color: var(--color-white);
+  text-decoration: underline;
 }
 
 button {
@@ -89,4 +89,8 @@ ul {
   padding: 4px 6px;
   border-radius: var(--radius);
   background-color: var(--color-black);
+
+  a {
+    text-decoration: none;
+  }
 }

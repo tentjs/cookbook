@@ -4,15 +4,12 @@ html(lang="en")
     link(rel="stylesheet", href="../style.css")
     title Modal #{title}
     include ../_includes/head.pug
-    style.
-      .recipe {
-        max-width: 350px;
-      }
   body
     div.recipe
       h1 Modal
       p A modal with open/close animations made with <a target="_blank" href="https://animejs.com/">anime.js</a> - opened with a button.
       p Can be closed by a button, clicking the background overlay and escape.
+      p: a(href="https://github.com/tentjs/cookbook/blob/main/src/components/modal.ts" target="_blank") [source]
       hr
     script(type="module", src="../components/modal.ts")
     include ../_includes/footer.pug

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet", href="../style.css")
+        title A Label #{title}
+        include ../_includes/head.pug
+    body
+        div.recipe
+            a(href="index.pug" class="go-back") back
+            h1 A Label
+            p A generic label with variant and a text.
+            p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/label.ts') [source]
+            hr
+            div.label(text="Hello, World!" variant="primary" style="margin-bottom: 8px")
+            div.label(text="Hello, Tent!" variant="secondary")
+    script(type="module", src="../components/label.ts")
+    include ../_includes/footer.pug

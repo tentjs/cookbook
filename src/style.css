@@ -13,6 +13,7 @@
   --font: -apple-system, BlinkMacSystemFont, 'Noto Sans', sans-serif;
 
   --radius: 6px;
+  --radius-round: 12px;
 }
 
 body {

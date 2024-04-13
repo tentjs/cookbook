@@ -1,9 +1,9 @@
-import {mount, tags} from "@tentjs/tent";
+import {Component, mount, tags} from "@tentjs/tent";
 import * as styles from "../css/label.module.css";
 
 const {span} = tags
 
-const Label = {
+const Label: Component<null> = {
   view: ({el}) => {
     const attrs = el.attributes
     const text = attrs.getNamedItem('text')?.value

@@ -3,7 +3,7 @@ import * as styles from '../css/label.module.css';
 
 const { span } = tags;
 
-const Label: Component<null> = {
+const Label: Component = {
   view: ({ el }) => {
     const attrs = el.attributes;
     const text = attrs.getNamedItem('text')?.value;

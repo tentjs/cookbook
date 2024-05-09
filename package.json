@@ -10,7 +10,7 @@
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tentjs/tent": "^0.0.21",
+    "@tentjs/tent": "^0.0.22",
     "animejs": "^3.2.2"
   },
   "prettier": {

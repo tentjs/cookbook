@@ -2,7 +2,7 @@ import { type Component, mount, tags } from '@tentjs/tent';
 
 const { div } = tags;
 
-const Avatar: Component<any> = {
+const Avatar: Component = {
   view: ({ attr }) => {
     const src = attr('src');
 

@@ -1,20 +1,15 @@
-import { mount, tags, type Component } from '@tentjs/tent'
+import { mount, tags, type Component } from '@tentjs/tent';
 
-const {button} = tags
+const { button } = tags;
 
 type State = {
-  count: number
-}
+  count: number;
+};
 
 const Counter: Component<State> = {
-  state: {count: 0},
-  view: ({state}) => button(
-    `Clicked ${state.count} times`,
-    {onclick: () => state.count++}
-  )
-}
+  state: { count: 0 },
+  view: ({ state }) =>
+    button(`Clicked ${state.count} times`, { onclick: () => state.count++ }),
+};
 
-mount(
-  document.querySelector('.recipe'),
-  Counter
-)
+mount(document.querySelector('.recipe'), Counter);

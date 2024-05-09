@@ -1,26 +1,27 @@
-import {mount, tags, type Component} from '@tentjs/tent'
-import * as styles from '../css/input.module.css'
+import { mount, tags, type Component } from '@tentjs/tent';
+import * as styles from '../css/input.module.css';
 
-const {div, p, input} = tags
+const { div, p, input } = tags;
 
 type State = {
-  text: string
-}
+  text: string;
+};
 
 const Text: Component<State> = {
-  state: {text: ''},
-  view: ({state}) => div([
+  state: { text: '' },
+  view: ({ state }) =>
     div([
-      input([], {
-        oninput: ({target}) => state.text = target.value,
-        placeholder: 'Your message...'
-      }),
-      p(state.text),
-    ], {className: styles.group})
-  ])
-}
+      div(
+        [
+          input([], {
+            oninput: ({ target }) => (state.text = target.value),
+            placeholder: 'Your message...',
+          }),
+          p(state.text),
+        ],
+        { className: styles.group }
+      ),
+    ]),
+};
 
-mount(
-  document.querySelector('.recipe'),
-  Text,
-)
+mount(document.querySelector('.recipe'), Text);

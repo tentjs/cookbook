@@ -4,13 +4,19 @@
   "description": "The ⛺ Tent cookbook",
   "scripts": {
     "start": "rm -rf dist && parcel ./src/pages/*.pug --no-cache -p 1337",
-    "build": "rm -rf docs && parcel build ./src/pages/*.pug --no-cache --dist-dir=docs --public-url=./"
+    "build": "rm -rf docs && parcel build ./src/pages/*.pug --no-cache --dist-dir=docs --public-url=./",
+    "lint:fix": "prettier --write src/**/*.ts"
   },
   "author": "sebkolind <sks1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tentjs/tent": "^0.0.20",
+    "@tentjs/tent": "^0.0.21",
     "animejs": "^3.2.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 80
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.11.0",

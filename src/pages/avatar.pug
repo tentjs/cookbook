@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet", href="../style.css")
+        title An Avatar #{title}
+        include ../_includes/head.pug
+    body
+        div.recipe
+            a(href="index.pug" class="go-back") back
+            h1 Avatar
+            p An avatar is a graphical representation of a user or the user's character.
+            p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/avatar.ts') [source]
+            hr
+            div.avatar(src="https://placehold.co/50x50")
+    script(type="module", src="../components/avatar.ts")
+    include ../_includes/footer.pug

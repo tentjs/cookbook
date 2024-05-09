@@ -11,7 +11,12 @@ const Avatar: Component = {
     }
 
     return div('', {
-      style: `background-image: url(${src}); width: 50px; height: 50px; border-radius: 50px;`,
+      style: `
+        background-image: url(${src});
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      `,
     });
   },
 };

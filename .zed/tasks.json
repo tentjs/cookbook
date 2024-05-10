@@ -1,0 +1,6 @@
+[
+  {
+    "label": "tent: install local",
+    "command": "npm i ../tent && npm run start"
+  }
+]

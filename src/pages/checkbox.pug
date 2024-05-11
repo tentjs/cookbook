@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="../style.css")
+    title Checkbox #{title}
+    include ../_includes/head.pug
+  body
+    div.recipe
+      a(href="index.pug" class="go-back") back
+      h1 A checkbox
+      p Just checking.
+      p: a(href='https://github.com/tentjs/cookbook/tree/main/src/components/checkbox.ts') [source]
+      hr
+    script(type="module", src="../components/checkbox.ts")
+    include ../_includes/footer.pug

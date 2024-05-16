@@ -2,18 +2,12 @@ import { mount, tags, type Component } from '@tentjs/tent';
 
 const { p } = tags;
 
-type State = {
+type Attrs = {
   msg: string;
 };
 
-const Attributes: Component<State> = {
-  state: { msg: '' },
-  view: ({ state }) => p(`This is your message: ${state.msg}`),
-  mounted: ({ state, attr }) => {
-    const msg = attr('msg');
-
-    state.msg = msg ? msg : 'No message provided';
-  },
+const Attributes: Component<{}, Attrs> = {
+  view: ({ el }) => p(`This is your message: ${el.dataset.msg}`),
 };
 
 mount(document.querySelector('.recipe'), Attributes);
